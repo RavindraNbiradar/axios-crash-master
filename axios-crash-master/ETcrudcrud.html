@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <div class="first">
+        <form class="form" onsubmit="saveToLocalStorage(event)">
+            <h2 style="color:rgb(0, 153, 89)"><u>Expense Tracker</u></h2>
+            <label><b><i>Description:</i></b></label>
+            <input id='descrip' type="text" name="descrip"  required/><br><br>
+            <label><b><i>Amount:</i></b></label>
+            <input id='amount' type="text" name="amount"  required/><br><br>
+            <label for="category"><b><i>Category:</i></b></label>
+                <select id='category' name="category" >   
+                    <option value="Food">Food</option>
+                    <option value="Cosmetics">Comsmetics</option>
+                    <option value="Travel">Travel</option>
+                    <option value="decor">Home decor</option>
+                </select>
+            <br>
+            <br>
+            <button style="background-color:rgb(212, 154, 203)"> Add Expense </button><br>
+        </form>
+    </div>    
+        <ul id='listOfExpense'></ul>
+    <script src="ETcrudcrud.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+</body>
+</html> 
